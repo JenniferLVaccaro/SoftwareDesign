@@ -196,7 +196,6 @@ def longest_ORF_noncoding(dna, num_trials):
     for i in range(num_trials):
         L = ''        
         dna = collapse(DNA)
-
         L = longest_ORF(dna)        
         if len(L) > len(J):
             J = L
