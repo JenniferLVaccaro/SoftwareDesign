@@ -1,0 +1,59 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Feb 12 23:56:02 2014
+
+@author: jvaccaro
+"""
+
+Salmonella findings!
+
+My longest ROF with the random scramble stuff was 831, so I filtered out 
+sequences less than 800. This resulted in protein chains ~250 codons long.
+
+So, I basically copied and pasted the gene description from the top Blast
+match for each gene.
+
+Since I was super happy about the first one, I copied a lot of descriptions.
+
+Conclusions: the secretion proteins SpaS and SpaO make Salmonella pathogenic.
+
+Gene 1:	
+type III secretion system protein SpaS, partial [Salmonella enterica]
+surface presentation of antigens protein SpaS [Salmonella enterica subsp. enterica serovar Typhimurium str. LT2] >ref|YP_001589764.1| surface presentation of antigens protein SpaS [Salmonella enterica subsp. enterica serovar Paratyphi B str. SPB7] >ref|YP_002042128.1| surface presentation of antigens protein SpaS [Salmonella enterica subsp. enterica serovar Newport str. SL254] >ref|YP_002046847.1| surface presentation of antigens protein SpaS [Salmonella enterica subsp. enterica serovar Heidelberg str. SL476] >ref|YP_002115839.1| surface presentation of antigens protein SpaS [Salmonella enterica subsp. enterica serovar Schwarzengrund str. CVM19633] >ref|YP_002216856.1| surface presentation of antigens protein SpaS [Salmonella enterica subsp. enterica serovar Dublin str. CT_02021853] >ref|YP_002227631.1| surface presentation of antigens protein SpaS [Salmonella enterica subsp. enterica serovar Gallinarum str. 287/91] >ref|YP_002244800.1| surface presentation of antigens protein SpaS [Salmonella enterica subsp. enterica serovar Enteritidis str. P125109] >ref|YP_005233876.1| secretory protein (associated with virulence) [Salmonella enterica subsp. enterica serovar Typhimurium str. D23580] >ref|YP_005238996.1| surface presentation of antigens protein SpaS [Salmonella enterica subsp. enterica serovar Typhimurium str. 14028S] >ref|YP_005182755.1| type III secretion system secretory apparatus [Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344] >ref|YP_005213995.1| secretory protein (associated with virulence) [Salmonella enterica subsp. enterica serovar Gallinarum/pullorum str. RKS5078] >ref|YP_005248632.1| surface presentation of antigens protein SpaS [Salmonella enterica subsp. enterica serovar Typhimurium str. T000240] >ref|YP_005253376.1| surface presentation of antigens protein SpaS [Salmonella enterica subsp. enterica serovar Typhimurium str. UK-1] >ref|YP_005243868.1| surface presentation of antigens protein SpaS [Salmonella enterica subsp. enterica serovar Typhimurium str. ST4/74] >ref|YP_005398250.1| type III secretion system secretory apparatus [Salmonella enterica subsp. enterica serovar Typhimurium str. 798] >ref|YP_006088975.1| Type III secretion inner membrane protein [Salmonella enterica subsp. enterica serovar Heidelberg str. B182] >ref|YP_007473534.1| type III secretion system protein SpaS [Salmonella enterica subsp. enterica serovar Javiana str. CFSAN001992] >ref|YP_007904009.1| type III secretion system protein SpaS [Salmonella enterica subsp. enterica serovar Typhimurium str. U288] >ref|YP_008248695.1| type III secretion system protein SpaS [Salmonella enterica subsp. enterica serovar Heidelberg str. 41578] >ref|YP_008252327.1| type III secretion system protein SpaS [Salmonella enterica subsp. enterica serovar Heidelberg str. CFSAN002069] >ref|YP_008253936.1| type III secretion system protein SpaS [Salmonella enterica subsp. enterica serovar Typhimurium var. 5- str. CFSAN001921] >ref|YP_008262018.1| type III secretion system protein SpaS [Salmonella enterica subsp. enterica serovar Cubana str. CFSAN002050] >ref|YP_008307498.1| type III secretion system protein SpaS [Salmonella enterica subsp. enterica serovar Bareilly str. CFSAN000189] >ref|YP_008267093.1| type III secretion system protein SpaS [Salmonella enterica subsp. enterica serovar 4,[5],12:i:- str. 08-1736] >ref|YP_008361894.1| Surface presentation of antigens protein spaS [Salmonella enterica subsp. enterica serovar Newport str. USMARC-S3124.1] >ref|YP_008382150.1| type III secretion system protein SpaS [Salmonella enterica subsp. enterica serovar Pullorum str. S06004] >ref|YP_008482450.1| secretory protein [Salmonella enterica subsp. enterica serovar Gallinarum/pullorum str. CDC1983-67] >ref|YP_008614523.1| type III secretion system protein SpaS [Salmonella enterica subsp. enterica serovar Thompson str. RM6836] >ref|YP_008645649.1| secretory protein (associated with virulence) [Salmonella enterica subsp. enterica serovar Typhimurium str. DT2] >ref|YP_008671343.1| secretory protein (associated with virulence) [Salmonella enterica... 	
+type III secretion system protein SpaS [Salmonella enterica] >gb|ESE59998.1| type III secretion system protein SpaS [Salmonella enterica subsp. salamae serovar 58:l,z13,z28:z6 str. 00-0163]
+type III secretion system protein SpaS [Salmonella enterica] >gb|ELN13994.1| type III secretion system protein SpaS [Salmonella enterica subsp. enterica serovar Enteritidis str. 607308-19] >gb|ELO22500.1| type III secretion system protein SpaS [Salmonella enterica subsp. enterica serovar Enteritidis str. 648900 1-16]
+type III secretion system protein SpaS [Salmonella enterica] >gb|ESE85233.1| type III secretion system protein SpaS [Salmonella enterica subsp. indica serovar 6,14,25:z10:1,(2),7 str. 1121]
+type III secretion system protein SpaS [Salmonella enterica] >gb|ELO82567.1| type III secretion system protein SpaS [Salmonella enterica subsp. enterica serovar Enteritidis str. 76-2651]
+type III secretion system protein SpaS [Salmonella enterica] >gb|ESJ79381.1| type III secretion system protein SpaS [Salmonella enterica subsp. enterica serovar Hartford str. CFSAN001075]
+type III secretion system protein SpaS [Salmonella enterica] 
+
+Gene 2:
+type III secretion system protein SpaS, partial [Salmonella enterica]
+
+Gene 3:
+type III secretion system protein SpaS, partial [Salmonella enterica]
+
+Gene 4:
+surface presentation of antigens protein SpaS [Salmonella enterica subsp. enterica serovar Typhimurium str. LT2]
+
+Gene 5:
+surface presentation of antigens protein SpaO [Salmonella enterica subsp. enterica serovar Typhimurium str. LT2] 
+
+Gene 6:
+needle length control protein [Salmonella enterica subsp. enterica serovar Typhimurium str. LT2] 
+
+Gene 7:
+needle length control protein [Salmonella enterica subsp. enterica serovar Typhimurium str. LT2] 
+
+Gene 8:
+surface presentation of antigens [Salmonella enterica subsp. enterica serovar Typhimurium]
+
+Candidate Genes: (These are in reverse order from how I )
+['MGIFASAGCGKTMLMHMLIEQTEADVFVIGLIGERGREVTEFVDMLRASHKKEKCVLVFATSDFPSVDRCNAAQLATTVAEYFRDQGKRVVLFIDSMTRYARALRDVALASGERPARRGYPASVFDNLPRLLERPGATSEGSITAFYTVLLESEEEADPMADEIRSILDGHLYLSRKLAGQGHYPAIDVLKSVSRVFGQVTTPTHAEQASAVRKLMTRLEELQLFIDLGEYRPGENIDNDRAMQMRDSLKAWLCQPVAQYSSFDDTLSGMNAFADQN',
+ 'MGDVSAVSSSGNILLPQQDEVGGLSEALKKAVEKHKTEYSGDKKDRDYGDAFVMHKETALPLLLAAWRHGAPAKSEHHNGNVSGLHHNGKSELRIAEKLLKVTAEKSVGLISAEAKVDKSAALLSSKNRPLESVSGKKLSADLKAVESVSEVTDNATGISDDNIKALPGDNKAIAGEGVRKEGAPLARDVAPARMAAANTGKPEDKDHKKVKDVSQLPLQPTTIADLSQLTGGDEKMPLAAQSKPMMTIFPTADGVKGEDSSLTYRFQRWGNDYSVNIQARQAGEFSLIPSNTQVEHRLHDQWQNGNPQRWHLTRDDQQNPQQQQHRQQSGEEDDA',
+ 'MHKETALPLLLAAWRHGAPAKSEHHNGNVSGLHHNGKSELRIAEKLLKVTAEKSVGLISAEAKVDKSAALLSSKNRPLESVSGKKLSADLKAVESVSEVTDNATGISDDNIKALPGDNKAIAGEGVRKEGAPLARDVAPARMAAANTGKPEDKDHKKVKDVSQLPLQPTTIADLSQLTGGDEKMPLAAQSKPMMTIFPTADGVKGEDSSLTYRFQRWGNDYSVNIQARQAGEFSLIPSNTQVEHRLHDQWQNGNPQRWHLTRDDQQNPQQQQHRQQSGEEDDA',
+ 'MSLRVRQIDRREWLLAQTATECQRHGREATLEYPTRQGMWVRLSDAEKRWSAWIKPGDWLEHVSPALAGAAVSAGAEHLVVPWLAATERPFELPVPHLSCRRLCVENPVPGSALPEGKLLHIMSDRGGLWFEHLPELPAVGGGRPKMLRWPLRFVIGSSDTQRSLLGRIGIGDVLLIRTSRAEVYCYAKKLGHFNRVEGGIIVETLDIQHIEEENNTTETAETLPGLNQLPVKLEFVLYRKNVTLAELEAMGQQQLLSLPTNAELNVEIMANGVLLGNGELVQMNDTLGVEIHEWLSESGNGE',
+ 'MSSNKTEKPTKKRLEDSAKKGQSFKSKDLIIACLTLGGIAYLVSYGSFNEFMGIIKIIIADNFDQSMADYSLAVFGIGLKYLIPFMLLCLVCSALPALLQAGFVLATEALKPNLSALNPVEGAKKLFSMRTVKDTVKTLLYLSSFVVAAIICWKKYKVEIFSQLNGNIVGIAVIWRELLLALVLTCLACALIVLLLDAIAEYFLTMKDMKMDKEEVKREMKEQEGNPEVKSKRREVHMEILSEQVKSDIENSRLIVANPTHITIGIYFKPELMPIPMISVYETNQRALAVRAYAEKVGVPVIVDIKLARSLFKTHRRYDLVSLEEIDEVLRLLVWLEEVENAGKDVIQPQENEVRH',
+ 'MGIIKIIIADNFDQSMADYSLAVFGIGLKYLIPFMLLCLVCSALPALLQAGFVLATEALKPNLSALNPVEGAKKLFSMRTVKDTVKTLLYLSSFVVAAIICWKKYKVEIFSQLNGNIVGIAVIWRELLLALVLTCLACALIVLLLDAIAEYFLTMKDMKMDKEEVKREMKEQEGNPEVKSKRREVHMEILSEQVKSDIENSRLIVANPTHITIGIYFKPELMPIPMISVYETNQRALAVRAYAEKVGVPVIVDIKLARSLFKTHRRYDLVSLEEIDEVLRLLVWLEEVENAGKDVIQPQENEVRH',
+ 'MADYSLAVFGIGLKYLIPFMLLCLVCSALPALLQAGFVLATEALKPNLSALNPVEGAKKLFSMRTVKDTVKTLLYLSSFVVAAIICWKKYKVEIFSQLNGNIVGIAVIWRELLLALVLTCLACALIVLLLDAIAEYFLTMKDMKMDKEEVKREMKEQEGNPEVKSKRREVHMEILSEQVKSDIENSRLIVANPTHITIGIYFKPELMPIPMISVYETNQRALAVRAYAEKVGVPVIVDIKLARSLFKTHRRYDLVSLEEIDEVLRLLVWLEEVENAGKDVIQPQENEVRH',
+ 'MLLCLVCSALPALLQAGFVLATEALKPNLSALNPVEGAKKLFSMRTVKDTVKTLLYLSSFVVAAIICWKKYKVEIFSQLNGNIVGIAVIWRELLLALVLTCLACALIVLLLDAIAEYFLTMKDMKMDKEEVKREMKEQEGNPEVKSKRREVHMEILSEQVKSDIENSRLIVANPTHITIGIYFKPELMPIPMISVYETNQRALAVRAYAEKVGVPVIVDIKLARSLFKTHRRYDLVSLEEIDEVLRLLVWLEEVENAGKDVIQPQENEVRH']
