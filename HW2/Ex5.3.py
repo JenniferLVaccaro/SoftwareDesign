@@ -43,3 +43,10 @@ def promptlyfe(a, b, c, n):
     checkfermat(a, b, c, n)
     
 promptlyfe(3, 4, 5, 2)
+
+'''
+What happens with checkfermat if n == 1?
+
+Also, I think the user inputted fermat checker 
+was supposed to be written using raw_input
+'''

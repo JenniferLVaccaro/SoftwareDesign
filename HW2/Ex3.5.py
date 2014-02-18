@@ -21,3 +21,11 @@ def yoloswag(n):
     print B
 
 yoloswag(4)
+
+'''
+Great work making it a working function
+and using string multiplcation. :)
+
+Also love the function name, but not generally supported.
+Be sure to name your function after what it does!
+'''

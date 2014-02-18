@@ -31,3 +31,12 @@ def compare(x, y):
         print 0
     else:
         print -1
+
+'''
+Once again, excellent work;
+keep it in mind that the function is asked 
+to return these values, not print them.
+
+Currently, it's a void function, but you want
+to make it a fruitful function.
+'''
