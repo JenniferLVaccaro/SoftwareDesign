@@ -30,16 +30,30 @@ def coding_strand_to_AA(dna):
                  the input DNA fragment
     """
     L = []
-    r = int(len(dna))/3    
+    r = int(len(dna))/3    # no need to cast to an int :-)
     for i in range(r):
+        # a shorthand: codon = dna[3*i:3*(i+1)]
         codon = str(dna[3*i]) + str(dna[3*i+1]) + str(dna[3*i+2])
-        for i in range(len(codons)):
+        for i in range(len(codons)):     # use different variables for nested loops!
             if codon in codons[i]:
                 yolo = i
                 break
         print yolo
         L.append(aa[yolo])
     return collapse(L)
+
+'''
+Love the parameter name, yolo!
+
+A suggestion for simpler logic:
+
+for i in range(r):
+    codon = dna[3*i:3*(i+1)]
+    for j in range(len(codons)):
+        if codon in codons[j]:
+            L.append(aa[j])
+return collapse(L)
+'''
 
 def coding_strand_to_AA_unit_tests():
     """ Unit tests for the coding_strand_to_AA function """
@@ -64,7 +78,7 @@ def get_reverse_complement(dna):
         elif dna[i] == 'G':
             R.append('C')
         else:
-            print 'Invalid Entry: not A T G or C you gave me' + str(dna[i])
+            print 'Invalid Entry: not A T G or C you gave me' + str(dna[i])     # Great error catching! Look below for more comments!
     R.reverse()
     return collapse(R)
     
@@ -174,7 +188,7 @@ def longest_ORF(dna):
     L = find_all_ORFs_both_strands(dna)
     A = L[0]
     for i in range(len(L)):
-        if len(L[i]) > A:
+        if len(L[i]) > A:       # I think you meant if len(L[i]) > len(A): ...
             A = L[i]
     return A
     
@@ -192,7 +206,7 @@ def longest_ORF_noncoding(dna, num_trials):
         returns: the maximum length longest ORF """
     DNA = list(dna)
     import random
-    J = 'ABCD'
+    J = 'ABCD'                  # What's 'ABCD'..??!?!?!
     for i in range(num_trials):
         L = ''        
         dna = collapse(DNA)
@@ -224,3 +238,14 @@ def gene_finder(dna, threshold):
         b = coding_strand_to_AA(A[i])
         R.append(b)
     return R
+
+'''
+As always, great work, Jenny!
+
+A few comments I have are:
+    - You don't need to type cast unnecessarily. When in doubt, always try running `type(...)` 
+      of whatever you have questions about!
+    - Huge kudos to you for realizing that you should raise a flag when a user types in something
+      that's not one of the nucleotides! Search for 'python raise exception' for more information
+      on these, or feel free to check out the codes in my hw3 folder on https://github.com/abekim/softdes
+'''
