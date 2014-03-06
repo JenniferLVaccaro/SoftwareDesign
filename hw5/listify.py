@@ -7,25 +7,32 @@ Created on Wed Feb 26 19:48:50 2014
 from pattern.web import *
 
 
-def listify():
+def listify_dates(L):
     """
-        Takes a string and makes it into a list of seperate tweets, and 
-        another with all of the dates.        
-        Imports: content.index thingy
-        Outs: [dates, tweets]
+        Takes a list of strings and makes it into a list of seperate dates.        
+        Ins: raw list
+        Outs: [Dates]
     """
-    
-    with open('test.txt','wb') as f:
-        f.write
-    content = f.read()
-    yolo = content.index('div.class="content">')
-    content[yolo:yolo+1000]
-    
-    
-    
-    content[index:index+1000]
-    html = open('test.txt','r'.read())
-    d = pq(html)
-    d('div.content')    
-    
-    li[0].text_content
+    Dates = []
+    for i in range(len(L)):
+        k = L[i]
+        search1 = k.find('-')
+        search2 = k[search1:].find('.')
+        date = k[search1:search2]
+        Dates.append(date)
+    return Dates
+
+def listify_tweets(L):
+    """
+        Takes a list of strings and makes it into a list of seperate tweets.        
+        Ins: raw list
+        Outs: [Tweets]
+    """
+    Tweets = []
+    for i in range(len(L)):
+        k = L[i]
+        search1= k.find('@lordemusic')
+        search2= k.find(':')
+        tweet = k[search1+44:search2-2]
+        Tweets.append(tweet)
+    return Tweets
