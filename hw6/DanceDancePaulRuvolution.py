@@ -170,5 +170,5 @@ if __name__ == '__main__':
         model.update()
         view.draw()
         time.sleep(.001) #game speed limit
-
+    print 'Final score: ' + str(model.score)
     pygame.quit() # closes open pygame window once game is over
