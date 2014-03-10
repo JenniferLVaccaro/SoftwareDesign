@@ -34,7 +34,7 @@ class ArrowModel:
                   -self.side/2, # starts just off the screen vertically
                   self.side, 
                   1 + self.speedFactor, # boxes start faster over course of game
-                  self.arrowlist[randint(0,3)]) # randomizes arrow orientation
+                  self.arrowlist[random.randint(0,3)]) # randomizes arrow orientation
         self.boxes.append(box)
          
     def update(self):
