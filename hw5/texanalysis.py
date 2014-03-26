@@ -71,6 +71,9 @@ def listify_tweets(L, handle):
         k = L[i].text_content().replace('\n','') #gets rid of annoying spacing
         
         search1= k.find('@'+handle)+len(handle)+40 #if this is a retweet, the original handle will probably not appear. At least I hope not!
+        '''
+        Has this been tested after writing the inline comment? As in, does this effectively filter out all retweets?
+        '''
         search2= k[search1:].find('Expand')+search1        
         tweet = k[search1:search2].strip()
         
@@ -94,6 +97,12 @@ def filter_yolo(L):
 
     return K    
 
+'''
+Nice filtering! In case you were interested, look into Python's built-in filter function:
+
+filter(lambda elem: len(elem) > 0, L) # filters list L for elements whose lengths are greater than 0
+'''
+
 def get_sentiment(Tweets):
     '''
         Takes the list of tweets and gets the sentiment floats.
@@ -103,10 +112,16 @@ def get_sentiment(Tweets):
     K = []
 
     for i in range(len(Tweets)):
-        scent = sentiment(Tweets[i])[0]
+        scent = sentiment(Tweets[i])[0]     # haha nice variable name
         K.append(scent)
 
     return K    
+
+'''
+Same idea here except with Python's built-in map function, which applies a function to every element in a list:
+
+map(lambda elem: sentiment(elem)[0], L) # replaces each element in list L with `sentiment(element)[0]`
+'''
     
 def test1():
     '''
@@ -119,7 +134,7 @@ def test1():
 
 #    return get_sentiment(filter_yolo(listify_tweets(L, "lordemusic")))
 #    return filter_yolo(listify_tweets(L, "lordemusic"))
-    
+
 def plot_sentimentvtime(handle):
     '''
         This plots the sentiment positivity vs. time with a well-labelled 
@@ -140,3 +155,7 @@ def plot_sentimentvtime(handle):
         
 #print test1()
 plot_sentimentvtime('zellly1')
+
+'''
+Use main scripts!
+'''
